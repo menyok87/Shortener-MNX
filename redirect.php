@@ -44,21 +44,14 @@ include('redirect.fb.php');
 }
 else
 {
-       if($country_code == "ID")
-      {
         header('Location: '.$url_origin.'');
         exit;
-      }
-      else
-      {
-        include('redirect.html.php');
-      } 
 }   
 
 }
 
 }else{
-    
+    exit;
 }
 mysqli_close($mysqli);
 

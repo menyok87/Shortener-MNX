@@ -1,4 +1,4 @@
-<?
+<?php
 function RandomURIadd($panjangURI = 1) {
 	$karakterURI = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstufwxyz0123456789';
 	$stringURI = '';

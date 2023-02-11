@@ -1,6 +1,7 @@
-<?
+<?php
 
-function api_cutly() {
+function api_cutly() 
+{
 
     $api=fopen("_apiCutly.txt", "r") or die("Unable to open file!");
     $api_branch=fread($api, filesize("_apiCutly.txt"));
@@ -13,7 +14,8 @@ function api_cutly() {
 
 
 }
-function get_tiny_url($url)  {  
+function get_tiny_url($url)  
+{  
 	$ch = curl_init();  
 	$timeout = 5;  
 	curl_setopt($ch,CURLOPT_URL,'http://tinyurl.com/api-create.php?url='.$url);  
@@ -36,7 +38,8 @@ $urlc =  json_decode($content,true);
 
 	return $urlc['ae_url'];  
 }
-function iii($url) {
+function iii($url) 
+{
 
     
 $postDataArray = [
@@ -712,5 +715,3 @@ fclose ($UR);
 
         
     }
-
-?>
